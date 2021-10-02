@@ -1,0 +1,21 @@
+{
+  "name": "@cloud-platform/api-client",
+  "version": "0.0.1",
+  "description": "API Client Module",
+  "private": true,
+  "author": {
+    "name": "Kyle Finley",
+    "email": "kyle@kylefinley.net"
+  },
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build"
+  },
+  "devDependencies": {
+    "@cloud-platform/core": "^0.0.1",
+    "@platform8/core": "^0.0.1",
+    "@types/node": "^13.13.38",
+    "axios": "^0.21.1",
+    "config": "^1.0.0",
+    "inversify-props": "^2.2.6"
+  }
+}
