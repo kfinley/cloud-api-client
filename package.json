@@ -12,7 +12,6 @@
   },
   "devDependencies": {
     "@cloud-platform/core": "^0.0.1",
-    "@platform8/core": "^0.0.1",
     "@types/node": "^13.13.38",
     "axios": "^0.21.1",
     "config": "^1.0.0",
