@@ -42,7 +42,7 @@ export class apiClient implements ApiClient {
     try {
       const instance = axios.create();
       return await instance.request<T>(requestConfig);
-    } catch (e) {
+    } catch (e: any) {
       if (e.response) {
         // (5xx, 4xx)
         if (e.response.status === 401) {
@@ -62,7 +62,7 @@ export class apiClient implements ApiClient {
     }
   }
 
-  public async postAsync<T>(url: string, data: unknown, headers?: Record<string, unknown>): Promise<ApiResponse<T>> {
+  public async postAsync<T>(url: string, data: unknown, headers?: Record<string, string>): Promise<ApiResponse<T>> {
     return this.requestAsync<T>({
       url: `${protocol}${url}`,
       data,
